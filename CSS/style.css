@@ -1,0 +1,100 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: hsl(0, 0%, 95%);
+  padding: 130px;
+}
+main .box {
+  width: 305px;
+  height: 460px;
+  position: relative;
+  padding: 40px;
+}
+main .sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0 0 7px;
+}
+main .SUVS {
+  background-color: hsl(184, 100%, 22%);
+}
+main .luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 7px 7px 0;
+}
+main .box h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+main .box p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
+main .box button {
+  border-radius: 30px;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  height: 50px;
+  width: 155px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
+}
+#sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 30px hsl(0, 0%, 95%);
+  border: solid;
+}
+#suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 30px hsl(0, 0%, 95%);
+  border: solid;
+}
+#luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border-radius: 30px hsl(0, 0%, 95%);
+  border: solid;
+}
+@media (max-width: 768px) {
+  main{
+    padding: 40px 0;
+  }
+  main .box {
+    padding: 30px;
+    width: 270px;
+    height: 400px;
+  }
+  main .sedans {
+    border-radius: 7px 7px 0 0;
+  }
+  main .luxury {
+    border-radius: 0 0 7px 7px;
+  }
+  main .box button {
+    bottom: 30px;
+    left: 35px;
+  }
+}
